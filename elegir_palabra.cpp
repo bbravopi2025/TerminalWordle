@@ -1,9 +1,4 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <random>
-#include <ctime>
+#include "utils.h"
 
 using namespace std;
 
@@ -30,7 +25,7 @@ vector<string> obtener_dominio(const string& nombre_archivo, size_t longitud){
 
 // Función para elegir palabra en base a RNG basado en ctime
 string elegir_palabra(const vector<string>& palabras){
-	if palabras.empty(){return "";}
+	if (palabras.empty()){return "";}
 
 	static mt19937 rng(static_cast<unsigned int>(time(nullptr)));
 
