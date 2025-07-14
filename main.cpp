@@ -18,8 +18,17 @@ int main(){
 
 	string palabra = elegir_palabra(dominio);
 
-	cout << palabra << endl;
+        set<char> palabras_adivinadas;
+        cout << "Adivina la palabra letra a letra: " << endl;
 
+	// Logica juego mismo
+	for (int i=0; i<5; i++){
+		char intento;
+		cout << "Intento " << i+1 << ": ";
+		cin >> intento;
+		palabras_adivinadas.insert(intento);
+		cout << mostrar_palabra_censurada(palabra, palabras_adivinadas) << endl;}
+	cout << "La palabra era: " << palabra << endl;
 	return 0;
 
 }
