@@ -15,6 +15,6 @@ vector<string> obtener_dominio(const string& nombre_archivo, size_t longitud);
 
 string elegir_palabra(const vector<string>& palabras);
 
-string mostrar_palabra_censurada(const string& palabra, const set<char>& letras_adivinadas);
+string mostrar_palabra_censurada(const string& palabra, set<char>& letras_adivinadas, const string& intento);
 
 #endif // UTILS_H
