@@ -8,7 +8,7 @@ string mostrar_palabra_censurada(const string& palabra, set<char>& letras_adivin
 
 	string resultado = "";
 
-	for (int i=0; i<intento.size() && i<palabra.size(); i++){
+	for (size_t i=0; i<intento.size() && i<palabra.size(); i++){
 		letras_adivinadas.insert(intento[i]);}
 
 
