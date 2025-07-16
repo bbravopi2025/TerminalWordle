@@ -8,6 +8,7 @@ Para compilar, usa:
 
 ```bash
 make
+```
 
 ## Ejecución
 
@@ -15,3 +16,4 @@ Para ejecutar, usa:
 
 ```bash
 ./wordle
+```
